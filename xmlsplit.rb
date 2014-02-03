@@ -24,7 +24,7 @@ urls.each do |url|
 		export.puts '</urlset>'
 		export.close
 		newname = "newmap" + j.to_s
-		export = File.new(newname + ".xml","w+")
+		export = File.new("export/" + newname + ".xml","w+")
 		export.puts '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
 		i = 1
 		j += 1
